@@ -1,0 +1,36 @@
+{
+    "messages": [
+        {
+            "role": "system",
+            "content": "Given an entity-centric table and corresponding question, answer the question by providing step-by-step reasoning and then clearly and concisely stating the final answer using \"Final Answer:\".\n\nEach table-question pair is presented as a table (identified by \"Table:\") followed by a question (identified by \"Q:\"). Tables are presented in a linear format, with columns separated by tabs, rows separated by newlines, and subsections separated by double newlines. If necessary, assume the current date is December, 2022.\n\nHere is an example that follows these instructions. Answer the provided questions in a similar format:\n"
+        },
+        {
+            "role": "user",
+            "content": "Table:\n\nTitle\tBette Davis\nDied\tOctober 6, 1989 | (1989-10-06) | (aged 81) | Neuilly-sur-Seine, France\nResting place\tForest Lawn Memorial Park\nOccupation\tActress\nYears active\t1929-1989\nPolitical party\tDemocratic\nSpouse(s)\tHarmon Oscar Nelson | ( | married |  1932; | divorced |  1938) | Arthur Farnsworth | ( | married |  1940; died 1943) | William Grant Sherry | ( | married |  1945; | divorced |  1950) | Gary Merrill | ( | married |  1950; | divorced |  1960)\nChildren\t3, including B. D. Hyman\nBette Davis\t['BETTEDavis (cropped).jpg | Publicity photo, 1935']\n\n\nQ: How long after Davis's career began did she take the photo?\n\n\nA:"
+        },
+        {
+            "role": "assistant",
+            "content": "Davis's career ranged from 1929 to 1989, so her career began in 1929. The photo was taken in 1935. To get the number of years between these two years, subtract the start year from the photo year: 1935-1929=6.\nFinal Answer: 6 years"
+        },
+        {
+            "role": "user",
+            "content": "Table:\n\nTitle\t\"2 Hearts 1 Love\"\n\"2 Hearts 1 Love\"\t['2 Hearts 1 Love.jpeg']\n\nSingle by 911\n\nfrom the album | Illuminate... (The Hits and More)\nReleased\t8 September 2013\nRecorded\t2013 | Central Sounds Studio, | Glasgow, Scotland\nGenre\tPop\nSongwriter(s)\t911\nProducer(s)\tJohn McLaughlin\n\n911 singles chronology\n911 singles chronology\t['\"Wonderland\" | (1999) | \" | 2 Hearts 1 Love | \" | (2013) | \"I Wish It Could Be Christmas Everyday\" | (2013)']\n\n\nQ: What year was 2 Hearts 1 Love released?\n\n\nA:"
+        },
+        {
+            "role": "assistant",
+            "content": "2 Hearts 1 Love was released on 8 September 2013, which is in the year 2013.\nFinal Answer: 2013"
+        },
+        {
+            "role": "user",
+            "content": "Table:\n\nTitle\tDwight Bernard\nDwight Bernard\t['Dwight Bernard.jpg']\n\nPitcher\n\nBorn | ( | 1952-05-31 | ) | May 31, 1952 | (age 70) | Mount Vernon, Illinois\n\nBatted | Right | Threw | Right\n\nMLB debut\nMLB debut\t['June 29, 1978, for the New York Mets']\n\nLast MLB appearance\nLast MLB appearance\t['October 2, 1982, for the Milwaukee Brewers']\n\nMLB statistics\nWin-loss record\t4-8\nEarned run average\t4.14\nStrikeouts\t92\n\nTeams\nTeams\t['New York Mets (1978-1979) | Milwaukee Brewers (1981-1982)']\n\n\nQ: When did Dwight Bernard start playing with the last team he was associated with?\n\n\nA:"
+        },
+        {
+            "role": "assistant",
+            "content": "Dwight Bernard has played with the New York Mets and Milwaukee Brewers. Bernard played for the Mets from 1978 to 1979 and the Brewers ,from 1981 to 1982. He was associated with the Brewers in 1982, which is more recent than the Mets in 1979; therefore, the last team he was associated with is the Brewers. He started playing for the Brewers in 1981.\nFinal Answer: 1981"
+        }
+    ],
+    "metadata": {
+        "description": "Few-shot examples for the TTQA dataset",
+        "version": "1.0"
+    }
+}

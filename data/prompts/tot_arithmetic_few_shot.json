@@ -1,0 +1,44 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "Return your answer as a JSON like: JSON = {\"explanation\": <your step by step solution>, \"answer\": <num_days>}. Do not include the units in the JSON value."
+    },
+    {
+      "role": "user",
+      "content": "The company had been operating for 122 days on 1967-01-21. How many days had it been operating for on 1967-04-30, if it never stopped in between the 2 dates? (Answer in days)."
+    },
+    {
+      "role": "assistant",
+      "content": "JSON = {\"explanation\": \"To find the number of days the company has been operating in total, we first need to find the number of days between January 21, 1967 to April 30, 1967.\n- The number of days between January 22 to January 31: 31 - 22 + 1 = 10 days\n- February has 28 days in 1967\n- March has 31 days\n- The number of days between April 1 to April 30 are: 30 - 1 + 1 = 30 days\n\nAdding all these together: 10 + 28 + 31 + 29 = 99 days. The company had already been operaing for 122 days and it continued for another 99 days. So, the total days is 122 + 99 = 221 days.\", \"answer\": 221}"
+    },
+    {
+      "role": "system",
+      "content": "Return your answer as a JSON like: JSON = {\"explanation\": <your step by step solution>, \"answer\": <num_months>}. Do not include the units in the JSON value."
+    },
+    {
+      "role": "user",
+      "content": "Today is 2001-01-28 (yyyy-mm-dd format) and I was born on 1997-10-28. I am X months old. Compute X. You can assume the time between the same date in two consecutive months to be 1 month. Eg: the time between 02/13/2020 and 03/13/2020 is 1 month."
+    },
+    {
+      "role": "assistant",
+      "content": "JSON = {\"explanation\": \"We need to count the number of months between January 28, 2001 to October 28, 1997. First, we calculate the number of full years between both dates. Each year consists of 12 months. There are three full years until 28 October 2000, which are 36 months. Now we calculate the remainig number of months from 28 October 2000 to 28 January 2001, which is 3 months. Therefore, X is 36 + 3 = 39 months old. \", \"answer\": 39}"
+    },
+    {
+      "role": "system",
+      "content": "Report the values of H, M and S as a json of the form {\"explanation\": <your step by step solution>, \"H\": H, \"M\": M, \"S\": S}."
+    },
+    {
+      "role": "user",
+      "content": "It takes Lee an average of 13 minutes and 21 seconds to read a chapter in this current favourite book. Lee has 7 more chapters to read. It will take him H hours, M minutes and S seconds to finish his book given his average reading time. Eg: the time between 02/13/2020 and 03/13/2020 is 1 month."
+    },
+    {
+      "role": "assistant",
+      "content": "JSON = {\"explanation\": \"We need to convert Lee's reading time to seconds: 13 * 60 + 21 = 801 seconds. To find out how long it takes Lee to finish his book, we need to multiply his average reading time per chapter times 7. 7 * 801 = 5607 seconds. Now we need to convert the answer back to the required format. We need to divide 5607 by 60 with a remainder: 5607 // 60 = 93 minutes. The remainder is 5607 - (93 * 60) = 5607 - 5580 = 27 seconds. 93 minutes is 1 hour and 33 minutes. Thus, the answer is H = 1, M = 33, S = 27\", \"H\": 1, \"M\": 33, \"S\": 27}"
+    }
+  ],
+  "metadata": {
+    "description": "Few-shot examples for the ToT arithemtic split, using examples from the data for inspiration",
+    "version": "1.0"
+  }
+}

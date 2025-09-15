@@ -1,0 +1,24 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+.vscode
+.pytest_cache
+__pycache__
+test.ipynb
+
+.env
+.coverage
+
+slurm-*.out
+
+*.sh
+
+.DS_Store
